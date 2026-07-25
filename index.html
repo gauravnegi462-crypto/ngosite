@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="HopeBridge Foundation creates healthier, stronger communities."
+    />
+    <title>HopeBridge Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="#home"><b>♥</b> HopeBridge</a>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <div class="nav-links">
+          <a href="#about">About</a><a href="#programs">Programs</a
+          ><a href="#gallery">Gallery</a><a href="#volunteer">Volunteer</a
+          ><a href="#stories">Stories</a><a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-btn" aria-label="Toggle dark mode">◐</button
+          ><a class="button donate-link" href="#donate">Donate</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">Every act matters</p>
+          <h1>Together We Build a Better Tomorrow.</h1>
+          <p class="lead">
+            HopeBridge partners with communities to turn care into lasting
+            opportunity through education, health, food security, and climate
+            action.
+          </p>
+          <div>
+            <a class="button" href="#donate">Donate now</a
+            ><a class="button outline" href="#volunteer">Become a volunteer</a>
+          </div>
+        </div>
+      </section>
+      <section class="stats container">
+        <article>
+          <strong data-count="25000">25,000+</strong><span>Lives Impacted</span>
+        </article>
+        <article>
+          <strong data-count="300">300+</strong><span>Volunteers</span>
+        </article>
+        <article>
+          <strong data-count="120">120</strong><span>Projects Completed</span>
+        </article>
+      </section>
+      <section id="about" class="section">
+        <div class="container split">
+          <img
+            class="rounded"
+            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1000&q=80"
+            alt="A child being supported by volunteers"
+          />
+          <div>
+            <p class="eyebrow">Our story</p>
+            <h2>Built by neighbours who chose to act.</h2>
+            <p>
+              HopeBridge began in 2012 with one community pantry and twelve
+              volunteers. Today, we connect local expertise with sustained
+              support in eighteen communities.
+            </p>
+            <div class="callout">
+              <b>Our mission</b><br />Grow equitable opportunity through
+              practical, community-led action.
+            </div>
+            <div class="callout">
+              <b>Our vision</b><br />A world where every community has what it
+              needs to flourish.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="programs" class="section tinted">
+        <div class="container">
+          <p class="eyebrow">What we do</p>
+          <h2>Programs with people at the centre.</h2>
+          <div class="card-grid" id="program-cards"></div>
+        </div>
+      </section>
+      <section id="gallery" class="section">
+        <div class="container">
+          <p class="eyebrow">In focus</p>
+          <h2>Change, in motion.</h2>
+          <div class="gallery" id="gallery-grid"></div>
+        </div>
+      </section>
+      <section id="volunteer" class="section tinted">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Volunteer with us</p>
+            <h2>Bring your care. Find your place.</h2>
+            <p>
+              Learn meaningful skills, meet generous people, and put your time
+              toward work that helps neighbours move forward.
+            </p>
+            <div class="callout">
+              <b>Flexible roles</b><br />From two hours a month to recurring
+              project work.
+            </div>
+            <div class="callout">
+              <b>Support included</b><br />Every volunteer receives onboarding
+              and guidance.
+            </div>
+          </div>
+          <form
+            class="form"
+            data-message="Thanks for volunteering—we'll be in touch soon."
+          >
+            <h3>Join the team</h3>
+            <label>Name<input required placeholder="Your full name" /></label
+            ><label
+              >Email<input
+                required
+                type="email"
+                placeholder="you@email.com" /></label
+            ><label
+              >Interest<select>
+                <option>Choose an area</option>
+                <option>Events and outreach</option>
+                <option>Education mentoring</option>
+                <option>Fundraising</option>
+              </select></label
+            ><button class="button">Send application</button>
+          </form>
+        </div>
+      </section>
+      <section id="donate" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Current campaign</p>
+            <h2>Build a brighter school year.</h2>
+            <p>
+              Help equip 500 students with supplies, learning support, and a
+              healthy daily meal.
+            </p>
+            <div class="progress"><i></i></div>
+            <p><b>$36,500 raised</b> of $50,000 goal · 73%</p>
+          </div>
+          <form
+            class="form"
+            data-message="Thank you for your generous support!"
+          >
+            <h3>Make a donation</h3>
+            <div class="amounts">
+              <button type="button">$15</button
+              ><button type="button" class="selected">$50</button
+              ><button type="button">$125</button
+              ><button type="button">$250</button>
+            </div>
+            <label
+              >Cardholder name<input
+                required
+                placeholder="Name on card" /></label
+            ><label
+              >Card number<input
+                required
+                inputmode="numeric"
+                placeholder="•••• •••• •••• ••••" /></label
+            ><button class="button">🔒 Donate securely</button
+            ><small>Demo payment interface. No payment is processed.</small>
+          </form>
+        </div>
+      </section>
+      <section id="stories" class="section tinted">
+        <div class="container">
+          <p class="eyebrow">Stories of impact</p>
+          <h2>Good things worth sharing.</h2>
+          <input
+            id="story-search"
+            class="search"
+            placeholder="Search stories"
+          />
+          <div class="card-grid stories" id="story-cards"></div>
+        </div>
+      </section>
+      <section id="contact" class="section">
+        <div class="container split">
+          <form
+            class="form"
+            data-message="Your message has been sent. Thank you!"
+          >
+            <h2>Let's talk</h2>
+            <label>Name<input required placeholder="Your name" /></label
+            ><label
+              >Email<input
+                required
+                type="email"
+                placeholder="you@email.com" /></label
+            ><label
+              >Message<textarea
+                required
+                placeholder="How can we help?"
+              ></textarea></label
+            ><button class="button">Send message</button>
+          </form>
+          <div>
+            <div class="map">📍<span>HopeBridge Community Hub</span></div>
+            <h3>Find us</h3>
+            <p><b>Email</b><br />hello@hopebridge.org</p>
+            <p><b>Phone</b><br />+1 (415) 555-0128</p>
+            <p><b>Follow</b><br />Instagram · LinkedIn · Facebook</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#home"><b>♥</b> HopeBridge</a>
+          <p>
+            Practical compassion and shared opportunity, one bridge at a time.
+          </p>
+        </div>
+        <div>
+          <b>Explore</b><a href="#about">Our story</a
+          ><a href="#programs">Programs</a><a href="#stories">Stories</a>
+        </div>
+        <div>
+          <b>Connect</b
+          ><a href="mailto:hello@hopebridge.org">hello@hopebridge.org</a
+          ><a href="#contact">Contact us</a>
+        </div>
+      </div>
+      <div class="container copyright">© 2026 HopeBridge Foundation.</div>
+    </footer>
+    <button class="back-top" aria-label="Back to top">↑</button>
+    <div class="lightbox"><img alt="Gallery preview" /></div>
+    <script src="script.js"></script>
+  </body>
+</html>
